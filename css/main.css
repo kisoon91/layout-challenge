@@ -1,31 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400);
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
 	body{
-		margin-left: 30%;
-		margin-right: 20px;
-		margin-bottom: 20px;
-		margin-top: 20px;		
-		font-size: 18px;
-		background-image: url("../img/ricepaper_v3.png");		
+		background-image: none !important;
+		font-size: 16px !important;
 	}
 	
 	.container-fluid{
-		margin-left: 30%;
-		margin-right, margin-bottom, margin-top: 20px;
+		margin: 0px !important;
+	}
+
+	#tagline{
+		display:none;
 	}
 
 	nav[role=navigation]{
+		text-align: left !important;
 		position: relative;
-		top: 10px;
-		right: 10px;
 	}
 }
 
-html{
-	font-family: 'Lato:400', serif;
-	font-size: 16px;
+nav[role=navigation]{
+	position: static;
+	top: 10px;
+	right: 10px;
+	text-align: right;	
+}
+
+body{
+	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-size: 18px;
 	font-weight: 300;
 	background-image: url("../img/background.jpg");
 	background-size: 100% 100%;
@@ -33,14 +38,21 @@ html{
 }
 
 .container-fluid{
-	margin-bottom. margin-top: 0;
+	margin-left: 30%;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;	
+	background-image: url("../img/ricepaper_v3.png");
+	opacity: 0.9;	
 }
 
 nav[role=navigation] ul{
-	padding, margin: 0;
+	padding: 0px;
+	margin: 0px;
 }
 
 nav[role=navigation] li{
+	list-style-type: none;
 	margin-right: 1em;
 	display: inline-block;
 }
@@ -48,46 +60,40 @@ nav[role=navigation] li{
 nav[role=navigation] li a{
 	color: #55E;	
 }
-.top:hover{
-	color: #00E;
-}
 
-.container-fluid{
-	margin-bottom, margin-top: 0;
+nav[role=navigation] a:hover{
+	color: #00E;
 }
 
 a:link, a:visited{
 	color: #0000AA;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 a:hover, input:focus {
 	color: #0000EE;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 h1, h2, h3{	
-	font-family: 'Raleway:300', serif;
+	font-family: 'Raleway', 'Helvetica Neue', 'Helvetica', serif;
 	font-weight: 300;
 }
 
 h1{
 	font-size: 300%;
-	margin: 0;
+	margin: 0px;
 }
 
 h2{
-	font-color: #505050;
+	color: #505050;
 	font-size: 150%;
-	margin: 0;
+	margin: 0px;
 }
 
 h3{
 	font-size: 125%;
-}
-
-body{
-	opacity: 0.9;
+	color: #505050;
 }
 
 header{
@@ -100,14 +106,14 @@ header{
 #tagline{
 	font-size: 120%;
 	color: #EEEEEE;
-	margin: 0;
+	margin: 0px;
 }
 
-.info{
+#location{
 	padding: 1em;
 }
 
-.menu{
+#menu{
 	padding: 1em;
 	background-color: rgba(207, 205, 140, 0.5);	
 }
@@ -123,7 +129,7 @@ dd{
 	font-weight: 400;
 }
 
-.about{
+#about{
 	padding: 1em;
 }
 
